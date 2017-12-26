@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Get Score",
+  "version": "1.0",
+
+  "description": "Bypasses waiting time when downloading sheet music on IMSLP",
+  "permissions": ["downloads", "downloads.open"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.imslp.org/*"],
+      "js": ["get-score.js"]
+    }
+  ]
+}
