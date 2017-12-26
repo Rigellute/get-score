@@ -1,4 +1,4 @@
-(async function getScore() {
+(function getScore() {
   const attr = document.getElementById('sm_dl_wait').getAttribute('data-id');
 
   if (attr && confirm('Score detected, open now?')) {
@@ -8,5 +8,4 @@
       console.error('Error downloading script', e);
     }
   }
-})();
-
+}());
